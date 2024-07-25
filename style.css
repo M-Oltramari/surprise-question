@@ -1,0 +1,125 @@
+body {
+    background-color: #042535;
+    color: #1b375c;
+    font: bold 15pt "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(22, 42, 73, 0.699);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(5, 116, 150, 0.363);
+    border: 1px solid #fcfcfcb0;
+    width: 80%;
+    max-width: 800px;
+    margin-top: -200px;
+    position: relative;
+}
+
+.container:hover {
+    box-shadow: 0 0 10px rgba(83, 154, 187, 0.7);
+}
+
+.input-wrapper {
+    margin-bottom: 3.12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.question-box {
+    background-color: rgba(11, 63, 110, 0.8);
+    padding: 1em 3em 2em 4em; /* Superior, Direita, Inferior, Esquerda */
+    border-radius: 0.8em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 12pt;
+    border: 5px whitesmoke;
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.question-box:hover {
+    background-color: rgba(109, 214, 205, 0.438);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.submit-button {
+    cursor: pointer;
+    transition: 0.5s ease;
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #136f99a2;
+    color: #ffffff;
+    border: none;
+}
+
+.submit-button:hover {
+    color: rgba(4, 100, 145, 0.623);
+    background-color: aqua;
+    box-shadow: 0 0 80px 30px rgba(223, 224, 197, 0.3);
+}
+
+h1 {
+    color: #5997e9;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    font-size: 10pt;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.cursor-ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.cursor-ball.illuminated {
+    box-shadow: 0 0 80px 30px rgba(251, 253, 253, 0.836);
+}
+
+.surprise-button {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    background-color: #FFA38F;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.surprise-button:hover {
+    background-color: #874CCC;
+    box-shadow: 0 0 80px 30px rgba(118, 2, 226, 0.856);
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 1;
+}
