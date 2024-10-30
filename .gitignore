@@ -1,0 +1,12 @@
+# Ignorar arquivos e diretórios temporários
+*.log           # Ignora todos os arquivos .log
+node_modules/   # Ignora a pasta node_modules
+dist/           # Ignora a pasta dist (geralmente usada em builds)
+
+# Ignorar arquivos do sistema
+.DS_Store       # MacOS
+Thumbs.db       # Windows
+
+# Ignorar arquivos de ambiente
+.env            # Arquivos de variáveis de ambiente
+.vscode/
